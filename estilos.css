@@ -95,15 +95,11 @@ header>div>h1{
         display: block;
     }
 
-    .banner {
-        
-        /* background: url(imagenes/main/banner_mobile_480px.jpg) no-repeat center center;
-        max-width: 100%;
-        height: calc(100vw * (480/463)); */
-        
-        
+    #abrir:focus .logo>h1 {
+        transition: left .5s ease;
     }
 
+   
     .encabezado_banner {
         position: absolute;
         top: 6rem;
@@ -113,13 +109,28 @@ header>div>h1{
     }
 
     .banner img {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: -5;
         max-width: 100%;
+        margin-top: 64px;
+       
+    }
+
+    .banner-pastillas{
+        position: relative;
+        top: -4px;
+        background: url(imagenes/banner-pastillas-de-informacion/rectangulo-gris.jpg) no-repeat center center;
+        min-width: 100vw;
+        height: 40vh;
     }
 }
 
 #barra {
     width: 100%;
     position: absolute;
+    z-index: 2;
     top: 4rem;                   /* PARA QUE EMPIECE A PARTIR DEL 4REM DEL HEADER */
     left: -100%;                 /* SE LE PONE -100% PARA QUE PERMANEZCA OCULTO Y SEA LLAMADO CON EL FOCUS */
     height: calc(100vh - 4rem);  /* SE LE RESTA LOS 4 REM DEL TOP */
