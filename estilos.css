@@ -1,0 +1,147 @@
+/* AKZIDENZ FONT */
+
+@import url('http://fonts.cdnfonts.com/css/berthold-akzidenz-grotesk-be-9');
+
+/* BAUHAUS FONT */
+
+@import url('http://fonts.cdnfonts.com/css/bauhaus');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Berthold Akzidenz Grotesk BE', sans-serif;
+    font-weight: 100;
+                                                
+}
+
+header {
+    background: #e82127;
+    color: white;
+    height: 4rem;
+    line-height: 4rem; /* INTERLINEADO */
+    position: absolute;
+    min-width: 100%;
+}
+
+.logo {
+    background: url(imagenes/header/TESLA_LOGO.svg) no-repeat center center;
+    margin-left: 1rem;
+    max-width: 30vw;
+    
+    
+}
+
+header>div>h1{
+    text-align: left;
+    padding-left: 1rem;
+    text-indent: -400px;
+    
+}
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+   
+
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+   
+    #menu > a {
+        list-style: none;
+        text-indent: -100px;      /* CORRO EL TEXTO 100 PX A LA IZQ */
+        overflow: hidden;         /* CON ESTO OCULTO ESE TEXTO CORRIDO A LA IZQ */
+        margin-top: .75em;
+        background: url("imagenes/header/menu.png") no-repeat center center;
+        background-size: cover;   /* HAGO QUE LA IMAGEN CUBRA TODO EL ANCHO DECLARADO */
+        height: 2.5em;
+        width: 2.5em;
+        position: absolute;       /* SE PONE POSITION ABSOLUTE PARA PISAR EL DE ABRIR CON EL DE CERRAR ESTANDO EN EL MISMO LUGAR */
+        top: 0;
+        right: 10px;
+        /* border: 2px solid white;
+        border-radius: 1rem; */
+    }
+
+
+    /* OCULTAR BOTON CERRAR */
+
+    #cerrar {
+        display: none;
+    }
+
+    /* Cuando abrir entra en foco animamos el ingreso de la barra y mostramos el botón cerrar para que "tape" al de abrir. 
+    
+    Si bien al hacer click en cualquier lado de la pantalla abrir pierde foco, no lo hace si lo volvemos a cliquear, por eso superponemos el de cerrar que lo único que hace es que abrir pierda foco y volver a estar display none. 
+    
+    La pseudoclase focus es nativa para elementos de formulario, sin embargo, también se puede aplicar a los vínculos sin funcionalidad de navegación (con el href #) y lo pierde cuando se hace click en cualquier lugar por fuera del botón en foco. */
+
+    #abrir:focus ~ #barra {
+        left: 0; 
+        z-index: 1;
+        
+    }
+
+    #abrir:focus ~ #cerrar {
+        display: block;
+    }
+
+    .banner {
+        
+        /* background: url(imagenes/main/banner_mobile_480px.jpg) no-repeat center center;
+        max-width: 100%;
+        height: calc(100vw * (480/463)); */
+        
+        
+    }
+
+    .encabezado_banner {
+        position: absolute;
+        top: 6rem;
+        left: 1rem;
+        font-size: .8rem;
+        color: #9a9a9a;
+    }
+
+    .banner img {
+        max-width: 100%;
+    }
+}
+
+#barra {
+    width: 100%;
+    position: absolute;
+    top: 4rem;                   /* PARA QUE EMPIECE A PARTIR DEL 4REM DEL HEADER */
+    left: -100%;                 /* SE LE PONE -100% PARA QUE PERMANEZCA OCULTO Y SEA LLAMADO CON EL FOCUS */
+    height: calc(100vh - 4rem);  /* SE LE RESTA LOS 4 REM DEL TOP */
+    background: #e82127;
+    transition: left .5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-top: 2px solid white;
+}
+
+#barra li {
+    list-style: none;
+    margin: 1em;
+    width: 80%;
+}
+
+#barra li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    line-height: 2em;
+}
