@@ -105,10 +105,10 @@ header>div>h1{
         top: 5rem;
         left: 1rem;
         font-size: .8rem;
-        font-weight: 200;
         color: #9a9a9a;
     }
 
+    
     .banner img {
         position: relative;
         top: 0;
@@ -138,10 +138,16 @@ header>div>h1{
     .banner-pastillas div {
         
         text-align: center;
-        margin: 1rem;
-        border-bottom: 2px solid white;
+        margin: 2rem;
+        border-bottom: 1px solid white;
     }
 
+    .banner-pastillas h2, p {
+        
+        margin-bottom: 1.5rem;
+    }
+
+    
     .banner-pastillas img {
         
         min-width: 10vw;
