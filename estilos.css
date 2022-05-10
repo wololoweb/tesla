@@ -122,9 +122,32 @@ header>div>h1{
     .banner-pastillas{
         position: relative;
         top: -4px;
-        background: url(imagenes/banner-pastillas-de-informacion/rectangulo-gris.jpg) no-repeat center center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        gap: 2rem;
+        background-color: #676767;
         min-width: 100vw;
-        height: 40vh;
+        min-height: 50vh;
+        color: white;
+        
+    }
+
+    .banner-pastillas div {
+        
+        text-align: center;
+        margin: 1rem;
+        border-bottom: 2px solid white;
+    }
+
+    .banner-pastillas img {
+        
+        min-width: 10vw;
+        max-width: 20vw;
+        min-height: 10vh;
+        max-height: 20vh;
     }
 }
 
