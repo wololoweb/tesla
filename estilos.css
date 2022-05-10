@@ -33,6 +33,7 @@ header {
 }
 
 header>div>h1{
+    
     text-align: left;
     padding-left: 1rem;
     text-indent: -400px;
@@ -46,7 +47,10 @@ header>div>h1{
 
 @media screen and (max-width: 480px) {
 
-   
+    header{
+        position: fixed;
+        z-index: 1000;
+    }
 
     nav {
         position: absolute;
@@ -146,7 +150,6 @@ header>div>h1{
 
     .banner-pastillas h2 {
         font-family: 'Bauhaus', sans-serif;
-        font-weight: bold;
         color:#9a9a9a;
     }
 
