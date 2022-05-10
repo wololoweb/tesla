@@ -142,13 +142,20 @@ header>div>h1{
         border-bottom: 1px solid white;
     }
 
+    
+
     .banner-pastillas h2 {
-        color: black;
+        font-family: 'Bauhaus', sans-serif;
+        color:#9a9a9a;
     }
 
 
     .banner-pastillas div:first-child {
         margin-top: 2rem;
+    }
+
+    .banner-pastillas>div h2 {
+        margin-top: 1rem;
     }
 
     .banner-pastillas h2, p {
