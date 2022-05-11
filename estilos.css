@@ -26,7 +26,13 @@ header {
 
 h1 ,h2 {
     font-family: 'Varela Round', sans-serif;
+    
 }
+
+h1 {
+    font-weight: 100;
+}
+
 
 
 .logo {
@@ -44,6 +50,24 @@ header>div>h1{
     padding-left: 1rem;
     text-indent: -400px;
     
+}
+
+.encabezado_banner{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 50vw;
+}
+
+.encabezado_banner p{
+    
+    
+    text-align: right;
+    
+}
+
+#formulario_mobile {
+    display: none;
 }
 
 
@@ -113,6 +137,121 @@ header>div>h1{
    
      /*  -------------------------------------------------MAIN-------------------------------------------------- */
 
+    .banner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner #button{
+        position: absolute;
+        align-self: flex-end;
+        margin-bottom: 2rem;
+        font-size: .6rem;
+       
+    }
+
+    #button a{
+        text-decoration: none;
+        color: white;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 100;
+        border-radius: 3.5rem;
+        padding: 1rem;
+        box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.3);
+        background-color: #676767;
+        
+    }
+
+    #button:target #formulario_mobile{
+        display: block;
+        position: fixed;
+        top: 4rem;
+        left: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #e82127;
+        color: white;
+        width: 100vw;
+        height: 100vh;
+        font-size: 2rem;
+        border-top: 2px solid white;
+        
+              
+        
+    }
+    
+    
+    #formulario_mobile form{
+        
+        padding: 1rem;
+        
+    }
+
+    #formulario_mobile form div {
+        display: flex;
+        flex-direction: column;
+        font-size: 3rem;
+    }
+
+    #formulario_mobile form div input {
+        width: 13rem;
+        height: 1.6rem;
+    }
+    
+
+
+    #formulario_mobile input{
+        justify-content: right;
+        align-items:flex-end;
+        align-self: flex-end;
+        align-content: flex-end;
+        
+    }
+    
+    #formulario_mobile span{
+        font-size: 2rem;
+    }
+
+    #formulario_mobile input{
+        
+        margin-top: .8rem;
+        margin-bottom: .8rem;
+        
+    }
+
+    .submit input{
+        
+        color: white;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 200;
+        border-radius: 3.5rem;
+        font-size: 1.5rem;
+        line-height: .2rem;
+        padding: 1rem;
+        box-shadow: 4px 4px 5px 2px rgba(155, 9, 9, 0.928);
+        background-color: #676767;
+    }
+
+   
+
+    #button:target #button{
+        border-radius: none;
+        box-shadow: none;
+    }
+
+    #button:target a{
+       display: none;
+    }
+
+    
+
+    
+
+
     .encabezado_banner {
         position: absolute;
         top: 5rem;
@@ -121,7 +260,7 @@ header>div>h1{
         color: #9a9a9a;
     }
 
-  
+    
     
     .banner img {
         position: relative;
@@ -203,6 +342,11 @@ header>div>h1{
         border-top: 2px solid white;
     }
 
+    
+
+    /* .formulario_mobile, .formulario_pc{
+        display: none;
+    } */
 
 }
 
@@ -233,11 +377,11 @@ header>div>h1{
    
     .encabezado_banner {
         position: absolute;
-        top: 5rem;
+        top: 8rem;
         left: 1rem;
         font-size: 3.5vw;
         color: #9a9a9a;
-        margin-top: 1.2rem;
+       
         margin-left: 1rem;
     }
 
@@ -287,7 +431,7 @@ header>div>h1{
     
 
     .banner-pastillas h2 {
-        font-family: 'Bauhaus', sans-serif;
+        font-family: 'Varela Round', sans-serif;
         color:#9a9a9a;
     }
 
