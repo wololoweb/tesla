@@ -11,14 +11,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+    
                                                 
 }
 
 header {
     background: #e82127;
     color: white;
-    
     
     position: fixed;
     z-index: 1000;
@@ -32,11 +31,12 @@ h1 ,h2 {
 
 .logo {
     background: url(imagenes/header/TESLA_LOGO.svg) no-repeat center center;
-    margin-left: 1rem;
+    margin-left: 2rem;
     max-width: 20vw;
     height: 4rem;
     line-height: 4rem; /* INTERLINEADO */
 }
+
 
 header>div>h1{
     
@@ -49,13 +49,13 @@ header>div>h1{
 
 /* ---------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------- */
-/* --------------------------------------------------MOBILE-------------------------------------------------- */
+/* ------------------------------------------------- MOBILE ------------------------------------------------- */
+/* ------------------------------------------------- 900 PX ------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------- */
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 760px) {
 
    
 
@@ -191,7 +191,7 @@ header>div>h1{
         position: absolute;
         z-index: 2;
         top: 4rem;                   /* PARA QUE EMPIECE A PARTIR DEL 4REM DEL HEADER */
-        left: -100%;                 /* SE LE PONE -100% PARA QUE PERMANEZCA OCULTO Y SEA LLAMADO CON EL FOCUS */
+        left: -200%;                 /* SE LE PONE -100% PARA QUE PERMANEZCA OCULTO Y SEA LLAMADO CON EL FOCUS */
         height: calc(100vh - 4rem);  /* SE LE RESTA LOS 4 REM DEL TOP */
         
         transition: left .5s ease;
@@ -202,22 +202,26 @@ header>div>h1{
         padding: 1rem;
         border-top: 2px solid white;
     }
+
+
 }
 
+
+
 /* ---------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------- */
-/* ------------------------------------------------TABLET/PC------------------------------------------------- */
+/* ------------------------------------------------TABLET WIDE /PC------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------- */
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 761px) {
 
    
    
     nav {
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
         width: 100%;
     }
 
@@ -225,9 +229,7 @@ header>div>h1{
         display: none;
     }
 
-  /*  #barra {
-     
-   } */
+  
    
     .encabezado_banner {
         position: absolute;
@@ -312,27 +314,26 @@ header>div>h1{
         max-height: 20vh;
     }
 
-    .logo{
-        /* max-width: 30vw; */
+    .viewport_pc {
+        max-width: 100%;
     }
 
-    #barra {
-        max-width: 60vw;
-        
-        position: absolute;
-        z-index: 2;
-        top: 0;                   /* PARA QUE EMPIECE A PARTIR DEL 4REM DEL HEADER */
-        right: 0;                /* SE LE PONE -100% PARA QUE PERMANEZCA OCULTO Y SEA LLAMADO CON EL FOCUS */
+    /* #menu {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        
-        margin-left: 300px;
+        justify-content: flex-end;
+    } */
+
+    #barra {
+        position: absolute;
+        right: 3rem;
+        max-width: 60vw;
+        display: flex;
+        justify-content: space-around;
+        margin-right: 0;
+       /*  margin-left: 300px; */
         font-size: 1rem;
         text-align: right;
-        font-size: 1rem;
-        
-        
+       
     }
 
     /* ANIMACION LINKS HOVER */
