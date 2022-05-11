@@ -335,7 +335,21 @@ header>div>h1{
         
     }
 
-   
+    /* ANIMACION LINKS HOVER */
+
+    #barra li a:after {
+        
+            display: block;
+            content: "";
+            border-bottom: solid 3px #fff;
+            transform: scaleX(0);
+            transition: transform 300ms ease-in-out;
+        
+    }
+
+    #barra li a:hover:after {
+        transform: scaleX(1);
+      }
     
 }
 
