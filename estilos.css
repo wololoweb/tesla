@@ -20,9 +20,11 @@ header {
     color: white;
     height: 4rem;
     line-height: 4rem; /* INTERLINEADO */
-    position: absolute;
+    position: fixed;
+    z-index: 1000;
     min-width: 100%;
 }
+
 
 .logo {
     background: url(imagenes/header/TESLA_LOGO.svg) no-repeat center center;
@@ -41,16 +43,17 @@ header>div>h1{
 }
 
 
-
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------MOBILE-------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
 
 
 
 @media screen and (max-width: 480px) {
 
-    header{
-        position: fixed;
-        z-index: 1000;
-    }
+   
 
     nav {
         position: absolute;
@@ -99,19 +102,22 @@ header>div>h1{
         display: block;
     }
 
-    #abrir:focus .logo>h1 {
+   /*  #abrir:focus .logo>h1 {
         transition: left .5s ease;
-    }
+    } */
 
    
+     /*  -------------------------------------------------MAIN-------------------------------------------------- */
+
     .encabezado_banner {
         position: absolute;
         top: 5rem;
         left: 1rem;
-        font-size: .8rem;
+        font-size: 3.5vw;
         color: #9a9a9a;
     }
 
+  
     
     .banner img {
         position: relative;
@@ -175,28 +181,162 @@ header>div>h1{
         min-height: 10vh;
         max-height: 20vh;
     }
+
+    #barra {
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        top: 4rem;                   /* PARA QUE EMPIECE A PARTIR DEL 4REM DEL HEADER */
+        left: -100%;                 /* SE LE PONE -100% PARA QUE PERMANEZCA OCULTO Y SEA LLAMADO CON EL FOCUS */
+        height: calc(100vh - 4rem);  /* SE LE RESTA LOS 4 REM DEL TOP */
+        
+        transition: left .5s ease;
+        display: flex;
+        flex-direction: column;
+        background-color: #e82127;
+        align-items: center;
+        padding: 1rem;
+        border-top: 2px solid white;
+    }
 }
 
-#barra {
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-    top: 4rem;                   /* PARA QUE EMPIECE A PARTIR DEL 4REM DEL HEADER */
-    left: -100%;                 /* SE LE PONE -100% PARA QUE PERMANEZCA OCULTO Y SEA LLAMADO CON EL FOCUS */
-    height: calc(100vh - 4rem);  /* SE LE RESTA LOS 4 REM DEL TOP */
-    background: #e82127;
-    transition: left .5s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    border-top: 2px solid white;
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------TABLET/PC------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 481px) {
+
+   
+   
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    #menu #abrir, #cerrar{
+        display: none;
+    }
+
+  /*  #barra {
+     
+   } */
+   
+    .encabezado_banner {
+        position: absolute;
+        top: 5rem;
+        left: 1rem;
+        font-size: 3.5vw;
+        color: #9a9a9a;
+        margin-top: 1.2rem;
+        margin-left: 1rem;
+    }
+
+   
+    
+    .banner img {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: -5;
+        max-width: 100%;
+        margin-top: 64px;
+       
+    }
+
+    .banner-pastillas{
+        position: relative;
+        top: -4px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        
+        background-color: #676767;
+       /*  min-width: 100vw;
+        min-height: 50vh; */
+        color: white;
+        
+    }
+
+    .banner-pastillas div {
+        
+        text-align: center;
+        margin: 0 3rem;
+        border-bottom: 1px solid white;
+    }
+
+    
+
+    
+
+    
+
+    .banner-pastillas h2 {
+        font-family: 'Bauhaus', sans-serif;
+        color:#9a9a9a;
+    }
+
+
+    .banner-pastillas div {
+        margin-top: 2rem;
+    }
+
+    .banner-pastillas>div h2 {
+        margin-top: 1rem;
+    }
+
+    .banner-pastillas h2, p {
+        
+        margin-bottom: 1.5rem;
+    }
+
+    
+    .banner-pastillas img {
+        
+        min-width: 10vw;
+        max-width: 20vw;
+        min-height: 10vh;
+        max-height: 20vh;
+    }
+
+    .logo{
+        max-width: 30vw;
+    }
+
+    #barra {
+        max-width: 60vw;
+        min-height: ;
+        position: absolute;
+        z-index: 2;
+        top: 0;                   /* PARA QUE EMPIECE A PARTIR DEL 4REM DEL HEADER */
+        right: 0;                /* SE LE PONE -100% PARA QUE PERMANEZCA OCULTO Y SEA LLAMADO CON EL FOCUS */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        
+        margin-left: 300px;
+        font-size: 1rem;
+        text-align: right;
+        font-size: 1rem;
+        
+        
+    }
+
+   
+    
 }
+
+
 
 #barra li {
     list-style: none;
-    margin: 1em;
-    width: 80%;
+    margin: 1rem;
+    
 }
 
 #barra li a {
