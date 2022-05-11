@@ -1,56 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Varela+Round&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Varela+Round&display=swap"
+        rel="stylesheet">
 
 
 </head>
+
 <body>
-    
-    
+
+
     <header>
 
-            <div class="logo">
-                <h1>TESLA</h1>
-                
-            </div>
-        
+        <div class="logo">
+            <h1>TESLA</h1>
 
-            <nav id="menu">
+        </div>
 
-                <a id="abrir" href="#">Abrir</a>
-                <a id="cerrar" href="#">Cerrar</a>
 
-                <ul id="barra">
-                    <li><a href="#uno">Home</a></li>
-                    <li><a href="#dos">Reserva</a></li>
-                    <li><a href="#tres">Información</a></li>
-                    <li><a href="#tres">Diseño</a></li>
-                    <li><a href="#tres">Contacto</a></li>
-                </ul>
+        <nav id="menu">
 
-            </nav>
+            <a id="abrir" href="#">Abrir</a>
+            <a id="cerrar" href="#">Cerrar</a>
+
+            <ul id="barra">
+                <li><a href="#uno">Home</a></li>
+                <li><a href="#dos">Reserva</a></li>
+                <li><a href="#tres">Información</a></li>
+                <li><a href="#tres">Diseño</a></li>
+                <li><a href="#tres">Contacto</a></li>
+            </ul>
+
+        </nav>
     </header>
 
     <main>
 
         <div class="banner">
+
             <div class="encabezado_banner">
                 <h1>CYBERTRUCK</h1>
                 <p>VIAJANDO AL FUTURO</p>
             </div>
+
             <picture>
                 <source class="viewport_pc" media="(min-width:481px)" srcset="imagenes/main/banner_pc.jpg">
                 <img src="imagenes/main/banner_mobile_480px.jpg" alt="Imagen de Cybertruck.">
             </picture>
+
+            <div id="button">
+                <a href="#button">RESERVALO</a>
+
+                <div id="formulario_mobile">
+                    <h1>RESERVA</h1>
+                    <form action="index.html" method="post">
+                        <div>
+                            <span>Nombre</span>
+                            <input type="text" name="nombre" placeholder="Ingrese su nombre">
+                        </div>
+    
+                        <div>
+                            <span>Apellido</span>
+                            <input type="text" name="apellido" placeholder="Ingrese su apellido">
+                        </div>
+    
+                        <div>
+                            <span>Teléfono</span>
+                            <input type="tel" name="tel" placeholder="Ej.: 1111-1111">
+                        </div>
+    
+                        <div>
+                            <span>Email</span>
+                            <input type="text" name="email" placeholder="Ej.: minombre@gmail.com">
+                        </div>
+
+                        <div class="submit">
+                            <input type="submit" value="Enviar">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+            
+        
+
+        <div class="formulario_pc">
+            <form action="" method="post"></form>
         </div>
 
         <div class="banner-pastillas">
@@ -59,21 +109,24 @@
                     <img src="imagenes/banner-pastillas-de-informacion/reciclado.svg" alt="Logo de reciclable">
                 </picture>
                 <h2>ECO FRIENDLY</h2>
-                <p>Todos nuestros vehículos están diseñados con un motor eléctrico de última generación que ayuda a reducir la contaminación del aire y las emisiones de gases de efecto invernadero.</p>
+                <p>Todos nuestros vehículos están diseñados con un motor eléctrico de última generación que ayuda a
+                    reducir la contaminación del aire y las emisiones de gases de efecto invernadero.</p>
             </div>
             <div>
                 <picture>
                     <img src="imagenes/banner-pastillas-de-informacion/conectividad.svg" alt="Logo de reciclable">
                 </picture>
                 <h2>CONECTIVIDAD</h2>
-                <p>Acceso a características que requieren el uso de datos, como la reproducción de música y de contenido multimedia, la visualización del tráfico en tiempo real y mucho más.</p>
+                <p>Acceso a características que requieren el uso de datos, como la reproducción de música y de contenido
+                    multimedia, la visualización del tráfico en tiempo real y mucho más.</p>
             </div>
             <div class="tercero">
                 <picture>
                     <img src="imagenes/banner-pastillas-de-informacion/autonomia.svg" alt="Logo de batería">
                 </picture>
                 <h2>AUTONOMÍA</h2>
-                <p>Con una autonomía desde 505km. podrás hacer que tus viajes se conviertan en una verdadera aventura recorriendo largas distancias sin necesidad de recargar en el camino.</p>
+                <p>Con una autonomía desde 505km. podrás hacer que tus viajes se conviertan en una verdadera aventura
+                    recorriendo largas distancias sin necesidad de recargar en el camino.</p>
             </div>
         </div>
 
@@ -83,4 +136,5 @@
 
 
 </body>
+
 </html>
