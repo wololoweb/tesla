@@ -177,7 +177,7 @@ header>div>h1{
         color: white;
         width: 100vw;
         height: 92vh;
-        font-size: 2rem;
+        font-size: 1.5rem;
         border-top: 2px solid white;
         
               
@@ -194,12 +194,12 @@ header>div>h1{
     #formulario_mobile form div {
         display: flex;
         flex-direction: column;
-        font-size: 3rem;
+        
     }
 
     #formulario_mobile form div input {
         width: 13rem;
-        height: 1.6rem;
+        height: 2rem;
     }
     
 
@@ -210,6 +210,10 @@ header>div>h1{
         align-self: flex-end;
         align-content: flex-end;
         
+    }
+
+    #formulario_mobile h1{
+        margin-bottom: 2rem;
     }
     
     #formulario_mobile span{
@@ -223,6 +227,11 @@ header>div>h1{
         
     }
 
+    .submit {
+        margin-top: 2rem;
+        
+    }
+
     .submit input{
         
         color: white;
@@ -230,11 +239,18 @@ header>div>h1{
         font-weight: 200;
         border-radius: 3.5rem;
         font-size: 1.5rem;
+        /* font-weight: bold; */
         line-height: .2rem;
         padding: 1rem;
+        border: none;
         box-shadow: 4px 4px 5px 2px rgba(155, 9, 9, 0.928);
-        background-color: #676767;
+        background-color:gold;
+        color: black;
+        
+       
     }
+
+    
 
    
 
