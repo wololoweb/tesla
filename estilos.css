@@ -180,6 +180,7 @@ header>div>h1{
         font-size: 1.5rem;
         border-top: 2px solid white;
         
+        
               
         
     }
@@ -189,42 +190,53 @@ header>div>h1{
         
         padding: 1rem;
         
+        
     }
 
     #formulario_mobile form div {
         display: flex;
-        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+
+    #formulario_mobile form section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #formulario_mobile form section input{
+        width: 8rem;
+        height: 2.5rem;
         
     }
 
     #formulario_mobile form div input {
-        width: 13rem;
-        height: 2rem;
+        width: 12rem;
+        height: 2.5rem;
+        margin-left: 1rem;
+        
     }
     
 
 
-    #formulario_mobile input{
-        justify-content: right;
-        align-items:flex-end;
-        align-self: flex-end;
-        align-content: flex-end;
-        
-    }
-
     #formulario_mobile h1{
-        margin-bottom: 2rem;
+        margin-top: 2rem;
     }
     
     #formulario_mobile span{
-        font-size: 2rem;
+        font-size: 1.7rem;
+       
+        
     }
 
     #formulario_mobile input{
         
         margin-top: .8rem;
         margin-bottom: .8rem;
-        
+       
     }
 
     .submit {
