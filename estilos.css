@@ -76,7 +76,7 @@ header>div>h1 {
 
 .banner-pastillas {
     padding-bottom: 4rem;
-    
+
 }
 
 /*************** CUERPO ************/
@@ -277,6 +277,7 @@ header>div>h1 {
 
     }
 
+
     .submit input {
 
         color: white;
@@ -359,7 +360,7 @@ header>div>h1 {
 
 
     .banner-pastillas h2 {
-        font-family: 'Bauhaus', sans-serif;
+        
         color: #9a9a9a;
     }
 
@@ -462,7 +463,7 @@ header>div>h1 {
     top: -1.5rem;
     display: flex;
     flex-direction: column;
-    padding-bottom: 2rem;
+    padding-bottom: 7rem;
 
 
 }
@@ -513,6 +514,39 @@ header>div>h1 {
     /* text-align: center; */
 }
 
+
+/* ------------------------------------------ CYBERTRUCK ADVENTURE -------------------------------------------- */
+
+#adventure {
+    position: relative;
+    top: -9rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#adventure img {
+    
+    max-width: 100%;
+}
+
+#adventure h2 {
+    position: relative;
+    top: 18vw;
+    z-index: 9999999;
+    
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    text-align: left;
+    color:#676767;
+    font-size: 5vw;
+    font-weight: 100;
+    padding-right: 2rem;
+    padding-top: .2rem;
+    border-top: 2px solid #e82127;
+}
 
 
 /* ---------------------------------------------------------------------------------------------------------- */
@@ -651,6 +685,12 @@ header>div>h1 {
 
     }
 
+    .submit input:hover {
+        background-color: #e82127;
+        color: white;
+        cursor: pointer;
+    }
+
     .submit input {
 
         color: white;
@@ -669,7 +709,7 @@ header>div>h1 {
 
     }
 
-    
+
 
     .banner-pastillas {
         position: relative;
@@ -779,7 +819,6 @@ header>div>h1 {
         top: -1.5rem;
         display: flex;
 
-
     }
 
     #colores picture {
@@ -795,6 +834,7 @@ header>div>h1 {
         padding-top: 3rem;
         border-bottom: 2px solid #e82127;
         font-size: 3rem;
+        font-family: 'Montserrat', sans-serif;
         text-align: right;
         margin-right: 5rem;
     }
@@ -804,7 +844,7 @@ header>div>h1 {
     .columnas div img {
         max-width: 100%;
         align-self: center;
-        padding: 1rem;
+        /* padding: 1rem; */
 
 
     }
@@ -818,11 +858,23 @@ header>div>h1 {
 
     .columnas p {
         padding-top: 2vh;
+        padding-left: 0;
         align-self: center;
+        font-weight: bold;
         color: #9a9a9a;
         font-size: 1.5rem;
         /* text-align: center; */
     }
+
+    .columnas picture div img:hover {
+        position: relative;
+        top: -2vh;
+        width: 250px;
+        cursor: pointer;
+
+
+    }
+
 
 
 }
@@ -896,9 +948,10 @@ header>div>h1 {
     }
 
     #formulario_mobile form div input {
-        width: 12rem;
+        width: 15vw;
         height: 2rem;
         margin-left: .5rem;
+        margin-right: .5rem;
 
     }
 
@@ -962,7 +1015,8 @@ header>div>h1 {
 
     #informacion h2,
     #diseno h2 {
-        font-size: 3.5rem;
+        font-size: 3rem;
+        font-family: 'Montserrat', sans-serif;
 
     }
 
@@ -1011,6 +1065,39 @@ header>div>h1 {
 
     }
 
+    /* ------------------------------------------ CYBERTRUCK ADVENTURE -------------------------------------------- */
+
+#adventure {
+    position: relative;
+    top: -15rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.adventure img {
+    
+    max-width: 100%;
+}
+
+#adventure h2 {
+    position: relative;
+    top: 16vw;
+    z-index: 9999999;
+    
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    text-align: left;
+    color:#676767;
+    font-size: 5vw;
+    font-weight: lighter;
+    padding-right: 2rem;
+    padding-top: .2rem;
+    border-top: 2px solid #e82127;
+}
+
 }
 
 
@@ -1034,4 +1121,3 @@ header>div>h1 {
 header {
     margin-bottom: 100rem;
 }
-
