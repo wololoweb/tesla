@@ -11,22 +11,23 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    
-                                                
+
+
 }
 
 header {
     background: #e82127;
     color: white;
-    
+
     position: fixed;
     z-index: 1000;
     min-width: 100%;
 }
 
-h1 ,h2 {
+h1,
+h2 {
     font-family: 'Varela Round', sans-serif;
-    
+
 }
 
 h1 {
@@ -40,48 +41,76 @@ h1 {
     margin-left: 2rem;
     max-width: 20vw;
     height: 4rem;
-    line-height: 4rem; /* INTERLINEADO */
+    line-height: 4rem;
+    /* INTERLINEADO */
 }
 
 
-header>div>h1{
-    
+header>div>h1 {
+
     text-align: left;
     padding-left: 1rem;
     text-indent: -400px;
-    
+
 }
 
-.encabezado_banner{
+.encabezado_banner {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     width: 50vw;
 }
 
-.encabezado_banner p{
-    
-    
+.encabezado_banner p {
+
+
     text-align: right;
-    
+
 }
 
 #formulario_mobile {
     display: none;
 }
 
+/*************** PASTILLAS ************/
+
+.banner-pastillas {
+    padding-bottom: 4rem;
+    
+}
+
+/*************** CUERPO ************/
+
+.cuerpo {
+    position: relative;
+    top: -1.2rem;
+    color: #676767;
+
+}
+
+.cuerpo span {
+    color: #e82127;
+    font-weight: bold;
+
+}
+
+
+
+
+
+
 
 /* ---------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------- */
-/* ------------------------------------------------- MOBILE ------------------------------------------------- */
-/* ------------------------------------------------- 800 PX ------------------------------------------------- */
+/* ---------------------------------------------  MOBILE ---------------------------------------------------- */
+/* --------------------------------------------HASTA 767 PX ------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------- */
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
 
-   
+
 
     nav {
         position: absolute;
@@ -90,17 +119,21 @@ header>div>h1{
         width: 100%;
     }
 
-   
-    #menu > a {
+
+    #menu>a {
         list-style: none;
-        text-indent: -100px;      /* CORRO EL TEXTO 100 PX A LA IZQ */
-        overflow: hidden;         /* CON ESTO OCULTO ESE TEXTO CORRIDO A LA IZQ */
+        text-indent: -100px;
+        /* CORRO EL TEXTO 100 PX A LA IZQ */
+        overflow: hidden;
+        /* CON ESTO OCULTO ESE TEXTO CORRIDO A LA IZQ */
         margin-top: .75em;
         background: url("imagenes/header/menu.png") no-repeat center center;
-        background-size: cover;   /* HAGO QUE LA IMAGEN CUBRA TODO EL ANCHO DECLARADO */
+        background-size: cover;
+        /* HAGO QUE LA IMAGEN CUBRA TODO EL ANCHO DECLARADO */
         height: 2.5em;
         width: 2.5em;
-        position: absolute;       /* SE PONE POSITION ABSOLUTE PARA PISAR EL DE ABRIR CON EL DE CERRAR ESTANDO EN EL MISMO LUGAR */
+        position: absolute;
+        /* SE PONE POSITION ABSOLUTE PARA PISAR EL DE ABRIR CON EL DE CERRAR ESTANDO EN EL MISMO LUGAR */
         top: 0;
         right: 10px;
         /* border: 2px solid white;
@@ -120,22 +153,22 @@ header>div>h1{
     
     La pseudoclase focus es nativa para elementos de formulario, sin embargo, también se puede aplicar a los vínculos sin funcionalidad de navegación (con el href #) y lo pierde cuando se hace click en cualquier lugar por fuera del botón en foco. */
 
-    #abrir:focus ~ #barra {
-        left: 0; 
+    #abrir:focus~#barra {
+        left: 0;
         z-index: 1;
-        
+
     }
 
-    #abrir:focus ~ #cerrar {
+    #abrir:focus~#cerrar {
         display: block;
     }
 
-   /*  #abrir:focus .logo>h1 {
+    /*  #abrir:focus .logo>h1 {
         transition: left .5s ease;
     } */
 
-   
-     /*  -------------------------------------------------MAIN-------------------------------------------------- */
+
+    /*  -------------------------------------------------MAIN-------------------------------------------------- */
 
     .banner {
         display: flex;
@@ -143,15 +176,15 @@ header>div>h1{
         justify-content: center;
     }
 
-    .banner #button{
+    .banner #button {
         position: absolute;
         align-self: flex-end;
         margin-bottom: 2rem;
         font-size: .6rem;
-       
+
     }
 
-    #button a{
+    #button a {
         text-decoration: none;
         color: black;
         font-family: 'Varela Round', sans-serif;
@@ -160,11 +193,11 @@ header>div>h1{
         padding: 1rem;
         box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.3);
         background-color: gold;
-        
+
     }
 
-    #button:target #formulario_mobile{
-        
+    #button:target #formulario_mobile {
+
         position: fixed;
         top: 4rem;
         left: 0;
@@ -179,73 +212,73 @@ header>div>h1{
         height: 150%;
         font-size: 1.5rem;
         border-top: 2px solid white;
-        
-        
-              
-        
+
+
+
+
     }
-    
-    
-    #formulario_mobile form{
-        
+
+
+    #formulario_mobile form {
+
         padding: 1rem;
-        
-        
+
+
     }
 
     #formulario_mobile form div {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        
+
     }
 
     #formulario_mobile form section {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
 
-    #formulario_mobile form section input{
+    #formulario_mobile form section input {
         width: 8rem;
         height: 2.5rem;
-        
+
     }
 
     #formulario_mobile form div input {
         width: 12rem;
         height: 2.5rem;
         margin-left: 1rem;
-        
+
     }
-    
 
 
-    #formulario_mobile h1{
+
+    #formulario_mobile h1 {
         margin-top: 2rem;
     }
-    
-    #formulario_mobile span{
+
+    #formulario_mobile span {
         font-size: 1.7rem;
-       
-        
+
+
     }
 
-    #formulario_mobile input{
-        
+    #formulario_mobile input {
+
         margin-top: .8rem;
         margin-bottom: .8rem;
-       
+
     }
 
     .submit {
         margin-top: 2rem;
-        
+
     }
 
-    .submit input{
-        
+    .submit input {
+
         color: white;
         font-family: 'Varela Round', sans-serif;
         font-weight: 100;
@@ -256,28 +289,28 @@ header>div>h1{
         padding: 1rem;
         border: none;
         box-shadow: 4px 4px 5px 2px rgba(155, 9, 9, 0.928);
-        background-color:gold;
+        background-color: gold;
         color: black;
-        
-       
+
+
     }
 
-    
 
-   
 
-    #button:target #button{
+
+
+    #button:target #button {
         border-radius: none;
         box-shadow: none;
     }
 
-    #button:target a{
-       display: none;
+    #button:target a {
+        display: none;
     }
 
-    
 
-    
+
+
 
 
     .encabezado_banner {
@@ -288,8 +321,8 @@ header>div>h1{
         color: #9a9a9a;
     }
 
-    
-    
+
+
     .banner img {
         position: relative;
         top: 0;
@@ -297,37 +330,37 @@ header>div>h1{
         z-index: -5;
         max-width: 100%;
         margin-top: 64px;
-       
+
     }
 
-    .banner-pastillas{
+    .banner-pastillas {
         position: relative;
         top: -4px;
 
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+
         gap: 2rem;
         background-color: #676767;
         min-width: 100vw;
         min-height: 50vh;
         color: white;
-        
+
     }
 
     .banner-pastillas div {
-        
+
         text-align: center;
         margin: 0 2rem;
         border-bottom: 1px solid white;
     }
 
-    
+
 
     .banner-pastillas h2 {
         font-family: 'Bauhaus', sans-serif;
-        color:#9a9a9a;
+        color: #9a9a9a;
     }
 
 
@@ -339,14 +372,15 @@ header>div>h1{
         margin-top: 1rem;
     }
 
-    .banner-pastillas h2, p {
-        
+    .banner-pastillas h2,
+    p {
+
         margin-bottom: 1.5rem;
     }
 
-    
+
     .banner-pastillas img {
-        
+
         min-width: 10vw;
         max-width: 20vw;
         min-height: 10vh;
@@ -357,10 +391,13 @@ header>div>h1{
         width: 100%;
         position: absolute;
         z-index: 2;
-        top: 4rem;                   /* PARA QUE EMPIECE A PARTIR DEL 4REM DEL HEADER */
-        left: -200%;                 /* SE LE PONE -100% PARA QUE PERMANEZCA OCULTO Y SEA LLAMADO CON EL FOCUS */
-        height: calc(100vh - 4rem);  /* SE LE RESTA LOS 4 REM DEL TOP */
-        
+        top: 4rem;
+        /* PARA QUE EMPIECE A PARTIR DEL 4REM DEL HEADER */
+        left: -200%;
+        /* SE LE PONE -100% PARA QUE PERMANEZCA OCULTO Y SEA LLAMADO CON EL FOCUS */
+        height: calc(100vh - 4rem);
+        /* SE LE RESTA LOS 4 REM DEL TOP */
+
         transition: left .5s ease;
         display: flex;
         flex-direction: column;
@@ -370,12 +407,110 @@ header>div>h1{
         border-top: 2px solid white;
     }
 
-    
 
-    /* .formulario_mobile, .formulario_pc{
-        display: none;
-    } */
 
+
+
+}
+
+/* ---------------------------------------------------- CUERPO -------------------------------------------- */
+
+.cuerpo {
+    background-image: url(imagenes/main/background_mobile.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#informacion div,
+#diseno div {
+    padding-top: 3rem;
+}
+
+#informacion p,
+#diseno p {
+    padding: 0 3rem 0 3rem;
+}
+
+#informacion>div:first-child {
+    border-bottom: 2px solid #e82127;
+    margin-left: 3rem;
+}
+
+#diseno>div:first-child {
+    border-bottom: 2px solid #e82127;
+    margin-left: 3rem;
+}
+
+#diseno picture {
+    display: flex;
+    justify-content: center;
+
+}
+
+#diseno picture img {
+
+    max-width: 100%;
+}
+
+/* -------------------------------------------------- COLORES ----------------------------------------------- */
+
+#colores {
+    background-image: url(imagenes/main/background_colores_mobile.jpg);
+    position: relative;
+    top: -1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+
+
+}
+
+#colores picture {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
+}
+
+#colores h2 {
+    color: #9a9a9a;
+    padding-top: 3rem;
+    border-bottom: 2px solid #e82127;
+    text-align: right;
+    margin-right: 3rem;
+}
+
+#colores picture img:first-child {
+    padding-top: 3rem;
+}
+
+#colores picture img:last-child {
+    padding-bottom: 3rem;
+}
+
+#colores img {
+    max-width: 100%;
+    align-self: flex-start;
+    padding: 1rem;
+
+
+}
+
+.columnas picture div {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.columnas p {
+    padding-top: 10vh;
+    padding-left: 1rem;
+    color: #9a9a9a;
+    font-size: 1rem;
+    /* text-align: center; */
 }
 
 
@@ -383,13 +518,13 @@ header>div>h1{
 /* ---------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------TABLET / NOTEBOOK ---------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------ MIN-WIDTH 768PX ----------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------- */
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 768px) {
 
-   
-   
+
+
     nav {
         position: absolute;
         top: 0;
@@ -397,24 +532,25 @@ header>div>h1{
         width: 100%;
     }
 
-    #menu #abrir, #cerrar{
+    #menu #abrir,
+    #cerrar {
         display: none;
     }
 
-  
-   
+
+
     .encabezado_banner {
         position: absolute;
         top: 8rem;
         left: 1rem;
         font-size: 3.5vw;
         color: #9a9a9a;
-       
+
         margin-left: 1rem;
     }
 
-   
-    
+
+
     .banner img {
         position: relative;
         top: 0;
@@ -422,17 +558,17 @@ header>div>h1{
         z-index: -5;
         max-width: 100%;
         margin-top: 64px;
-       
+
     }
 
     /* ------------------------------ FORMULARIO ------------------------------- */
 
-    #button a{
+    #button a {
         display: none;
     }
 
     #formulario_mobile {
-        
+
         position: absolute;
         top: 17rem;
         left: 3rem;
@@ -442,7 +578,7 @@ header>div>h1{
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
-        background-color:#9a9a9a;
+        background-color: #9a9a9a;
         color: white;
         width: 27vw;
         max-height: 60vh;
@@ -454,69 +590,69 @@ header>div>h1{
 
     /* hasta aca todo bien */
 
-    #formulario_mobile form{
-        
+    #formulario_mobile form {
+
         padding: 1rem;
-        
-        
+
+
     }
 
     #formulario_mobile form div {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        
+
     }
 
     #formulario_mobile form section {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
 
-    #formulario_mobile form section input{
+    #formulario_mobile form section input {
         width: 8rem;
         height: 2.5rem;
-        
+
     }
 
     #formulario_mobile form div input {
         width: 9rem;
         height: 1.3rem;
         margin-left: .5rem;
-        
+
     }
-    
 
 
-    #formulario_mobile h1{
+
+    #formulario_mobile h1 {
         font-size: 1.6rem;
-        background-color:#676767;
+        background-color: #676767;
         width: 100%;
         text-align: center;
     }
-    
-    #formulario_mobile span{
+
+    #formulario_mobile span {
         font-size: .8rem;
-       
-        
+
+
     }
 
-    #formulario_mobile input{
-        
+    #formulario_mobile input {
+
         margin-top: .4rem;
         margin-bottom: .4rem;
-       
+
     }
 
     .submit {
         margin-top: .4rem;
-        
+
     }
 
-    .submit input{
-        
+    .submit input {
+
         color: white;
         font-family: 'Varela Round', sans-serif;
         font-weight: 100;
@@ -527,49 +663,50 @@ header>div>h1{
         padding: 1rem;
         border: none;
         box-shadow: 4px 4px 5px 2px rgba(49, 47, 47, 0.696);
-        background-color:gold;
+        background-color: gold;
         color: black;
-        
-       
+
+
     }
 
+    
 
-    .banner-pastillas{
+    .banner-pastillas {
         position: relative;
         top: -4px;
-
+        padding: 0 5rem 4rem 5rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        
+
         min-height: 40vh;
         background-color: #676767;
-       /*  min-width: 100vw;
+        /*  min-width: 100vw;
         min-height: 50vh; */
         color: white;
-        
+
     }
 
-   
+
 
     .banner-pastillas div {
-        
+
         text-align: center;
         margin: 0 3rem;
-        
-       
+
+
     }
 
     .banner-pastillas p {
         padding-bottom: 3rem;
         border-bottom: 2px solid white;
-    }   
+    }
 
-    
+
 
     .banner-pastillas h2 {
         font-family: 'Varela Round', sans-serif;
-        color:#9a9a9a;
+        color: #9a9a9a;
     }
 
 
@@ -581,14 +718,15 @@ header>div>h1{
         margin-top: 1rem;
     }
 
-    .banner-pastillas h2, p {
-        
+    .banner-pastillas h2,
+    p {
+
         margin-bottom: 1.5rem;
     }
 
-    
+
     .banner-pastillas img {
-        
+
         min-width: 10vw;
         max-width: 20vw;
         min-height: 10vh;
@@ -611,29 +749,87 @@ header>div>h1{
         display: flex;
         justify-content: space-around;
         margin-right: 0;
-       /*  margin-left: 300px; */
+        /*  margin-left: 300px; */
         font-size: 1rem;
         text-align: right;
-       
+
     }
 
     /* ANIMACION LINKS HOVER */
 
     #barra li a:after {
-        
-            display: block;
-            content: "";
-            border-bottom: solid 3px #fff;
-            transform: scaleX(0);
-            transition: transform 300ms ease-in-out;
-        
+
+        display: block;
+        content: "";
+        border-bottom: solid 3px #fff;
+        transform: scaleX(0);
+        transition: transform 300ms ease-in-out;
+
     }
 
     #barra li a:hover:after {
         transform: scaleX(1);
-      }
-    
+    }
+
+    /* -------------------------------------------------- COLORES ----------------------------------------------- */
+
+    #colores {
+        background-image: url(imagenes/main/background_colores_mobile.jpg);
+        position: relative;
+        top: -1.5rem;
+        display: flex;
+
+
+    }
+
+    #colores picture {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #colores h2 {
+        color: #9a9a9a;
+        padding-top: 3rem;
+        border-bottom: 2px solid #e82127;
+        font-size: 3rem;
+        text-align: right;
+        margin-right: 5rem;
+    }
+
+
+
+    .columnas div img {
+        max-width: 100%;
+        align-self: center;
+        padding: 1rem;
+
+
+    }
+
+    .columnas picture div {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3rem;
+
+    }
+
+    .columnas p {
+        padding-top: 2vh;
+        align-self: center;
+        color: #9a9a9a;
+        font-size: 1.5rem;
+        /* text-align: center; */
+    }
+
+
 }
+
+
+
+
 
 /* ---------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------- */
@@ -643,15 +839,16 @@ header>div>h1{
 
 @media screen and (min-width: 1024px) {
 
-    
-    #button a{
+
+    #button a {
         display: none;
     }
 
     #formulario_mobile {
-        
+
         position: absolute;
-        top: 25rem;
+        /* top: 25rem; */
+        top: 30vw;
         left: 4rem;
         font-size: 3.5vw;
 
@@ -659,7 +856,7 @@ header>div>h1{
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
-        background-color:#9a9a9a;
+        background-color: #9a9a9a;
         color: white;
         max-width: 29vw;
         max-height: 60vh;
@@ -671,69 +868,69 @@ header>div>h1{
 
     /* hasta aca todo bien */
 
-    #formulario_mobile form{
-        
+    #formulario_mobile form {
+
         padding: 1rem;
-        
-        
+
+
     }
 
     #formulario_mobile form div {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        
+
     }
 
     #formulario_mobile form section {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
 
-    #formulario_mobile form section input{
+    #formulario_mobile form section input {
         width: 8rem;
         height: 2.5rem;
-        
+
     }
 
     #formulario_mobile form div input {
         width: 12rem;
         height: 2rem;
         margin-left: .5rem;
-        
+
     }
-    
 
 
-    #formulario_mobile h1{
+
+    #formulario_mobile h1 {
         font-size: 2.5rem;
-        background-color:#676767;
+        background-color: #676767;
         width: 100%;
         text-align: center;
     }
-    
-    #formulario_mobile span{
+
+    #formulario_mobile span {
         font-size: 1.5rem;
-       
-        
+
+
     }
 
-    #formulario_mobile input{
-        
+    #formulario_mobile input {
+
         margin-top: .4rem;
         margin-bottom: .4rem;
-       
+
     }
 
     .submit {
         margin-top: .4rem;
-        
+
     }
 
-    .submit input{
-        
+    .submit input {
+
         color: white;
         font-family: 'Varela Round', sans-serif;
         font-weight: 100;
@@ -744,10 +941,74 @@ header>div>h1{
         padding: 1rem;
         border: none;
         box-shadow: 4px 4px 5px 2px rgba(49, 47, 47, 0.696);
-        background-color:gold;
+        background-color: gold;
         color: black;
-        
-       
+
+
+    }
+
+    /* ---------------------------------------------------- CUERPO -------------------------------------------- */
+
+    .cuerpo {
+        background-image: url(imagenes/main/background_pc.jpg);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 5rem;
+        gap: 5rem;
+
+    }
+
+    #informacion h2,
+    #diseno h2 {
+        font-size: 3.5rem;
+
+    }
+
+
+
+
+    #informacion div,
+    #diseno div {
+        padding-top: 3rem;
+
+    }
+
+
+
+    #informacion p,
+    #diseno p {
+
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    #diseno p,
+    #diseno img {
+        padding: 0 3rem 0 3rem;
+    }
+
+    #informacion>div:first-child {
+        border-bottom: 3px solid #e82127;
+
+    }
+
+    #diseno>div:first-child {
+        border-bottom: 3px solid #e82127;
+        margin-right: 3rem;
+    }
+
+    #diseno picture {
+        display: flex;
+        justify-content: left;
+    }
+
+    #diseno picture img {
+        max-width: 100%;
+
+        /* margin-left: 3rem; */
+
     }
 
 }
@@ -757,7 +1018,7 @@ header>div>h1{
 #barra li {
     list-style: none;
     margin: 1rem;
-    
+
 }
 
 #barra li a {
@@ -765,18 +1026,12 @@ header>div>h1{
     display: block;
     color: white;
     text-align: center;
-    
+
     font-weight: bolder;
     font-size: 1.2rem;
 }
 
-
-
-
-
-
-
-
-
-
+header {
+    margin-bottom: 100rem;
+}
 
