@@ -12,13 +12,30 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
+    
 
 }
 
-main {
+.banner picture{
     position: relative;
+    top: 0;
+    z-index: 1;
+}
+
+ul li:hover{
+    cursor: pointer;
+}
+
+form input[type=submit]:hover{
+    cursor: pointer;
+}
+
+
+
+main {
+    
     background-color: #676767;
-    z-index: -3000;
+    
 }
 
 header {
@@ -61,6 +78,9 @@ header>div>h1 {
 }
 
 .encabezado_banner {
+    position: relative;
+    top: 0;
+    z-index: 2;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -191,6 +211,9 @@ header>div>h1 {
     }
 
     #button a {
+        position: relative;
+        top: 0;
+        z-index: 2;
         text-decoration: none;
         color: black;
         font-family: 'Varela Round', sans-serif;
@@ -307,7 +330,7 @@ header>div>h1 {
 
 
     #button:target #button {
-        border-radius: none;
+        border: none;
         box-shadow: none;
     }
 
@@ -476,13 +499,19 @@ header>div>h1 {
     }
 
     footer section {
-
+        display: flex;
+        flex-direction: row;
         padding: 1rem 3rem 0 3rem;
         background-color: #676767;
         color: #9a9a9a;
-
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
         width: 100vw;
+        font-size: .5rem;
     }
+
+    
 
     footer ul li {
         padding: .7rem .7rem;
@@ -494,8 +523,14 @@ header>div>h1 {
     }
 
     footer section>p:first-child {
-        border-bottom: 1px solid #9a9a9a;
-        padding-bottom: 1.5rem;
+        align-items: center;
+        border: none;
+        /* padding-bottom: 1.5rem; */
+    }
+
+    footer section>p:last-child {
+        
+        padding-bottom: 0;
     }
 
     #redes_sociales ul {
@@ -790,7 +825,7 @@ header>div>h1 {
         top: 17rem;
         left: 3rem;
         font-size: 3.5vw;
-
+        z-index: 2;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -1137,6 +1172,11 @@ header>div>h1 {
         align-self: flex-end;
     }
 
+    footer form input[type=submit]:hover{
+        background-color: #e82127;
+        color: white;
+    }
+
     footer section {
         display: flex;
         flex-direction: row;
@@ -1145,7 +1185,7 @@ header>div>h1 {
         color: #9a9a9a;
         text-align: center;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         width: 100vw;
     }
 
@@ -1160,6 +1200,7 @@ header>div>h1 {
     footer section p:last-child{
         padding-left: 2rem;
     }
+
     footer ul li {
         padding: .7rem .7rem;
     }
@@ -1194,17 +1235,22 @@ header>div>h1 {
     }
 
     #redes_sociales ul li {
-        width: 5vw;
-        height: 5vw;
+        width: 3.5vw;
+        height: 3.5vw;
         margin: 1rem;
+        
     }
 
 
 
     .facebook {
-        background-image: url(imagenes/footer/iconos/facebook_Mesa\ de\ trabajo\ 1.svg);
+        background-image: url(imagenes/footer/iconos/facebook_Mesa\ de\ trabajo\ 1_Mesa\ de\ trabajo\ 1.svg);
         border-radius: 100%;
         box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .facebook:hover{
+        background-image: url(imagenes/footer/iconos/facebook_hover_Mesa\ de\ trabajo\ 1_Mesa\ de\ trabajo\ 1.svg);
     }
 
     .twitter {
@@ -1213,11 +1259,19 @@ header>div>h1 {
         box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.3);
     }
 
+    .twitter:hover {
+        background-image: url(imagenes/footer/iconos/twitter_hover_Mesa\ de\ trabajo\ 1_Mesa\ de\ trabajo\ 1.svg);
+    }
+
     .instagram {
 
         background-image: url(imagenes/footer/iconos/instagram_Mesa\ de\ trabajo\ 1.svg);
         border-radius: 100%;
         box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .instagram:hover {
+        background-image: url(imagenes/footer/iconos/instagram_hover_Mesa\ de\ trabajo\ 1_Mesa\ de\ trabajo\ 1.svg);
     }
 
 }
@@ -1360,7 +1414,7 @@ header>div>h1 {
     #diseno h2 {
         font-size: 3rem;
         font-family: 'Montserrat', sans-serif;
-        color: #474646;
+        color: #676767;
     }
 
 
