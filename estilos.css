@@ -11,8 +11,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 
+}
+
+main {
+    position: relative;
+    background-color: #676767;
+    z-index: -3000;
 }
 
 header {
@@ -81,12 +87,12 @@ header>div>h1 {
 
 /*************** CUERPO ************/
 
-.cuerpo {
+/* .cuerpo {
     position: relative;
     top: -1.2rem;
     color: #676767;
 
-}
+} */
 
 .cuerpo span {
     color: #e82127;
@@ -108,7 +114,7 @@ header>div>h1 {
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
 
 
@@ -335,9 +341,9 @@ header>div>h1 {
     }
 
     .banner-pastillas {
-        position: relative;
+        /*  position: relative;
         top: -4px;
-
+ */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -411,9 +417,9 @@ header>div>h1 {
     /* -------------------------------------------- FOOTER ----------------------------------------------- */
 
 
-    footer{
-        position: relative;
-        top: -9.3rem;
+    footer {
+        /* position: relative;
+        top: -9.3rem; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -425,36 +431,38 @@ header>div>h1 {
         padding-top: 3rem;
     }
 
-    footer div{
+    footer div {
         background-color: #474646;
         width: 100vw;
     }
 
-    footer div:last-child{
+    footer div:last-child {
         background-color: #474646;
         width: 100vw;
         padding-bottom: 3rem;
     }
-    
 
-    footer h2{
+
+    footer h2 {
         padding-top: 2rem;
         padding-bottom: 1rem;
         background-color: #474646;
     }
-    footer ul{
+
+    footer ul {
         list-style: none;
     }
 
-    footer form div input{
+    footer form div input {
         padding: .8rem;
         width: 60vw;
     }
-    footer form div span{
+
+    footer form div span {
         padding-right: .5rem;
     }
 
-    footer form input[type=submit]{
+    footer form input[type=submit] {
         margin-top: 1.5rem;
         color: black;
         font-family: 'Varela Round', sans-serif;
@@ -466,67 +474,69 @@ header>div>h1 {
         border: none;
         width: 30vw;
     }
-    
+
     footer section {
-        
+
         padding: 1rem 3rem 0 3rem;
         background-color: #676767;
         color: #9a9a9a;
-       
+
         width: 100vw;
     }
 
-    footer ul li{
+    footer ul li {
         padding: .7rem .7rem;
     }
 
-    footer a{
+    footer a {
         text-decoration: none;
         color: #9a9a9a;
     }
 
-    footer section>p:first-child{
+    footer section>p:first-child {
         border-bottom: 1px solid #9a9a9a;
         padding-bottom: 1.5rem;
     }
 
-    #redes_sociales ul{
+    #redes_sociales ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
         padding-bottom: .4rem;
     }
 
-    #redes_sociales ul li a{
+    #redes_sociales ul li a {
         font-size: 0;
     }
 
-    #redes_sociales ul li{
+    #redes_sociales ul li {
         width: 15vw;
         height: 15vw;
         margin: 1rem;
     }
 
-    
+
 
     .facebook {
         background-image: url(imagenes/footer/iconos/facebook_Mesa\ de\ trabajo\ 1.svg);
         border-radius: 100%;
         box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.3);
     }
+
     .twitter {
         background-image: url(imagenes/footer/iconos/twiiter_Mesa\ de\ trabajo\ 1.svg);
         box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.3);
         border-radius: 100%;
     }
+
     .instagram {
-        
+
         background-image: url(imagenes/footer/iconos/instagram_Mesa\ de\ trabajo\ 1.svg);
         box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.3);
         border-radius: 100%;
     }
 
-    
+
 
 }
 
@@ -575,11 +585,12 @@ header>div>h1 {
 
 #colores {
     background-image: url(imagenes/main/background_colores_mobile.jpg);
-    position: relative;
-    top: -1.5rem;
+    /* position: relative;
+    top: -1.5rem; */
     display: flex;
     flex-direction: column;
     padding-bottom: 7rem;
+    
 
 
 }
@@ -634,10 +645,16 @@ header>div>h1 {
 /* ------------------------------------------ CYBERTRUCK ADVENTURE -------------------------------------------- */
 
 #adventure {
-    position: relative;
-    top: -9rem;
+    /*   position: relative;
+    top: -9rem; */
+    background: url(imagenes/main/cybertruck_768x524px.jpg) no-repeat;
+
+    width: 100vw;
+    height: calc(100vw * (524 / 768));
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
 
 }
 
@@ -647,21 +664,25 @@ header>div>h1 {
 }
 
 #adventure h2 {
-    position: relative;
+    /* position: relative;
     top: 18vw;
-    z-index: 2;
+    z-index: 2; */
 
-    width: 30%;
+    
     display: flex;
     flex-wrap: wrap;
-    align-self: flex-end;
-    text-align: left;
-    color: #676767;
+    /* align-self: flex-start; */
+    text-align: right;
+    margin-right: 5rem;
+    color:white;
+    font-weight: 200;
     font-size: 5vw;
     font-weight: 100;
-    padding-right: 2rem;
+    padding-left: 3rem;
     padding-top: .2rem;
-    border-top: 2px solid #e82127;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #e82127;
 }
 
 
@@ -673,7 +694,51 @@ header>div>h1 {
 /* ------------------------------------------------ MIN-WIDTH 768PX ----------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------- */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
+
+
+    /* ------------------------------------------ CYBERTRUCK ADVENTURE -------------------------------------------- */
+
+    #adventure {
+        /*   position: relative;
+      top: -9rem; */
+        background: url(imagenes/main/cybertruck_1024x698px.jpg) no-repeat;
+
+        width: 100vw;
+        height: calc(100vw * (698 / 1024));
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    #adventure img {
+
+        max-width: 100%;
+    }
+
+    #adventure h2 {
+        /* position: relative;
+        top: 18vw;
+        z-index: 2; */
+    
+        
+        display: flex;
+        flex-wrap: wrap;
+        /* align-self: flex-start; */
+        text-align: left;
+        margin-right: 0;
+        color:#474646;
+        font-weight: 200;
+        padding-left: 0;
+        font-weight: 100;
+        padding-right: 3rem;
+        padding-top: .2rem;
+        margin-top: 4rem;
+        font-size: 2.5rem;
+        border-top: 2px solid #e82127;
+        border-bottom: none;
+    }
 
 
 
@@ -704,8 +769,8 @@ header>div>h1 {
 
 
     .banner img {
-        position: relative;
-        top: 0;
+        /* position: relative;
+        top: 0; */
         left: 0;
         z-index: -5;
         max-width: 100%;
@@ -932,11 +997,12 @@ header>div>h1 {
     /* -------------------------------------------------- COLORES ----------------------------------------------- */
 
     #colores {
-        background-image: url(imagenes/main/background_colores_mobile.jpg);
+        background-image: none;
+        background-color: #676767;
         position: relative;
         top: -1.5rem;
         display: flex;
-
+        
     }
 
     #colores picture {
@@ -996,11 +1062,11 @@ header>div>h1 {
     /* -------------------------------------------- FOOTER ----------------------------------------------- */
 
 
-    footer{
-        position: relative;
-        top: -9.3rem;
+    footer {
+        /* position: relative;
+        top: -9.3rem; */
         display: flex;
-        
+
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
@@ -1013,12 +1079,12 @@ header>div>h1 {
         padding-top: 3rem;
         gap: 3rem;
         flex-wrap: wrap;
-        
+
     }
 
-    
 
-    footer div{
+
+    footer div {
         display: flex;
         flex-direction: column;
         /* padding-left: 3rem; */
@@ -1026,36 +1092,38 @@ header>div>h1 {
         /* width: 20vw; */
     }
 
-    footer div:last-child{
+    footer div:last-child {
         background-color: #474646;
         /* width: 100vw; */
         padding-bottom: 1rem;
     }
-    
 
-    footer h2{
+
+    footer h2 {
         padding-top: 2rem;
         padding-bottom: 1rem;
         background-color: #474646;
         font-size: 1rem;
-        
-    }
-    footer ul{
-        list-style: none;
-        
+
     }
 
-    footer form div input{
+    footer ul {
+        list-style: none;
+
+    }
+
+    footer form div input {
         padding: .8rem;
         width: 30vw;
     }
-    footer form div span{
+
+    footer form div span {
         padding-right: .5rem;
         padding-bottom: 1rem;
         width: 5vw;
     }
 
-    footer form input[type=submit]{
+    footer form input[type=submit] {
         margin-top: 1.5rem;
         color: black;
         font-family: 'Varela Round', sans-serif;
@@ -1068,69 +1136,85 @@ header>div>h1 {
         width: 10vw;
         align-self: flex-end;
     }
-    
+
     footer section {
-        
+        display: flex;
+        flex-direction: row;
         padding: 1rem 3rem 0 3rem;
         background-color: #676767;
         color: #9a9a9a;
-       
+        text-align: center;
+        align-items: center;
+        justify-content: center;
         width: 100vw;
     }
 
-    footer ul li{
+    footer section>p:first-child {
+        align-items: center;
+        border: none;
+        /* padding-bottom: 1.5rem; */
+    }
+
+    
+
+    footer section p:last-child{
+        padding-left: 2rem;
+    }
+    footer ul li {
         padding: .7rem .7rem;
     }
 
-    footer a{
+    footer a {
         text-decoration: none;
         color: #9a9a9a;
     }
 
-    footer section>p:first-child{
+    /* footer section>p:first-child {
         border-bottom: 1px solid #9a9a9a;
         padding-bottom: 1.5rem;
-       
-    }
 
-    
+    } */
 
-    .newsletter{
+
+
+    .newsletter {
         padding-left: 3rem;
         padding-right: 3rem;
     }
 
-    #redes_sociales ul{
+    #redes_sociales ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
         padding-bottom: .4rem;
     }
 
-    #redes_sociales ul li a{
+    #redes_sociales ul li a {
         font-size: 0;
     }
 
-    #redes_sociales ul li{
+    #redes_sociales ul li {
         width: 5vw;
         height: 5vw;
         margin: 1rem;
     }
 
-    
+
 
     .facebook {
         background-image: url(imagenes/footer/iconos/facebook_Mesa\ de\ trabajo\ 1.svg);
         border-radius: 100%;
         box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.3);
     }
+
     .twitter {
         background-image: url(imagenes/footer/iconos/twiiter_Mesa\ de\ trabajo\ 1.svg);
         border-radius: 100%;
         box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.3);
     }
+
     .instagram {
-        
+
         background-image: url(imagenes/footer/iconos/instagram_Mesa\ de\ trabajo\ 1.svg);
         border-radius: 100%;
         box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.3);
@@ -1148,7 +1232,7 @@ header>div>h1 {
 /* ---------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------- */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
 
 
     #button a {
@@ -1276,7 +1360,7 @@ header>div>h1 {
     #diseno h2 {
         font-size: 3rem;
         font-family: 'Montserrat', sans-serif;
-
+        color: #474646;
     }
 
 
@@ -1327,10 +1411,16 @@ header>div>h1 {
     /* ------------------------------------------ CYBERTRUCK ADVENTURE -------------------------------------------- */
 
     #adventure {
-        position: relative;
-        top: -15rem;
+        /*   position: relative;
+          top: -9rem; */
+        background: url(imagenes/main/cybertruck_1600x1091px.jpg) no-repeat;
+
+        width: 100vw;
+        height: calc(100vw * (1091 / 1600));
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
 
     }
 
@@ -1340,22 +1430,28 @@ header>div>h1 {
     }
 
     #adventure h2 {
-        position: relative;
-        top: 16vw;
-        z-index: 2;
-
-        width: 30%;
+        /* position: relative;
+        top: 18vw;
+        z-index: 2; */
+    
+        
         display: flex;
         flex-wrap: wrap;
-        align-self: flex-end;
+        /* align-self: flex-start; */
         text-align: left;
-        color: #676767;
-        font-size: 5vw;
-        font-weight: lighter;
-        padding-right: 2rem;
+        margin-right: 0;
+        color:#474646;
+        font-weight: 200;
+        padding-left: 0;
+        font-weight: 100;
+        padding-right: 5rem;
         padding-top: .2rem;
-        border-top: 2px solid #e82127;
+        margin-top: 5rem;
+        font-size: 2.7rem;
+        border-top: 3px solid #e82127;
+        border-bottom: none;
     }
+
 
 }
 
